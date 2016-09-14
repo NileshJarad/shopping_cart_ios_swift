@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5200B9511D8571FB007A7EA4 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5200B9501D8571FB007A7EA4 /* ColorConstants.swift */; };
 		52893F4B1D82B65900460ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52893F4A1D82B65900460ABA /* AppDelegate.swift */; };
 		52893F4D1D82B65900460ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52893F4C1D82B65900460ABA /* ViewController.swift */; };
 		52893F501D82B65900460ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52893F4E1D82B65900460ABA /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5200B9501D8571FB007A7EA4 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		52893F471D82B65900460ABA /* ShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52893F4A1D82B65900460ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52893F4C1D82B65900460ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5200B94F1D8571BE007A7EA4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5200B9501D8571FB007A7EA4 /* ColorConstants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		52893F3E1D82B65900460ABA = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		52893F491D82B65900460ABA /* ShoppingCart */ = {
 			isa = PBXGroup;
 			children = (
+				5200B94F1D8571BE007A7EA4 /* Utilities */,
 				52893F4A1D82B65900460ABA /* AppDelegate.swift */,
 				52893F4C1D82B65900460ABA /* ViewController.swift */,
 				52893F4E1D82B65900460ABA /* Main.storyboard */,
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5200B9511D8571FB007A7EA4 /* ColorConstants.swift in Sources */,
 				52893F4D1D82B65900460ABA /* ViewController.swift in Sources */,
 				52893F4B1D82B65900460ABA /* AppDelegate.swift in Sources */,
 			);
@@ -401,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShoppingCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyanotis.ShoppingCart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nj.ShoppingCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -412,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShoppingCart/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cyanotis.ShoppingCart;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nj.ShoppingCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -482,6 +494,7 @@
 				52893F711D82B65900460ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52893F721D82B65900460ABA /* Build configuration list for PBXNativeTarget "ShoppingCartTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +503,7 @@
 				52893F741D82B65900460ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52893F751D82B65900460ABA /* Build configuration list for PBXNativeTarget "ShoppingCartUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +512,7 @@
 				52893F771D82B65900460ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,4 +6,13 @@
 //  Copyright © 2016 Nilesh Jarad. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+
+class ColorConstants {
+    
+    
+//    var primaryColor = UIColor(red: 57, green: 65, blue: 101, alpha: 1)
+    let primaryColor = UIColor(red: 57, green: 65, blue: 101, alpha: 1)
+    
+}
