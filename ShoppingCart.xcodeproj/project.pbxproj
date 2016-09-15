@@ -11,6 +11,7 @@
 		523F81DE1D89730300838C4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F81DD1D89730300838C4D /* LoginViewController.swift */; };
 		523F81E41D897E5F00838C4D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F81E31D897E5F00838C4D /* LoginPresenter.swift */; };
 		523F81E71D89892D00838C4D /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F81E61D89892D00838C4D /* ToastView.swift */; };
+		525E5F221D8A72CA00B0DFC4 /* LoginPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E5F211D8A72CA00B0DFC4 /* LoginPresenterTest.swift */; };
 		52893F4B1D82B65900460ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52893F4A1D82B65900460ABA /* AppDelegate.swift */; };
 		52893F501D82B65900460ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52893F4E1D82B65900460ABA /* Main.storyboard */; };
 		52893F521D82B65900460ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52893F511D82B65900460ABA /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		523F81DD1D89730300838C4D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = "<group>"; };
 		523F81E31D897E5F00838C4D /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		523F81E61D89892D00838C4D /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		525E5F211D8A72CA00B0DFC4 /* LoginPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenterTest.swift; path = Login/LoginPresenterTest.swift; sourceTree = "<group>"; };
 		52893F471D82B65900460ABA /* ShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52893F4A1D82B65900460ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52893F4F1D82B65900460ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		525E5F201D8A72A200B0DFC4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				525E5F211D8A72CA00B0DFC4 /* LoginPresenterTest.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		52893F3E1D82B65900460ABA = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 		52893F5E1D82B65900460ABA /* ShoppingCartTests */ = {
 			isa = PBXGroup;
 			children = (
+				525E5F201D8A72A200B0DFC4 /* Login */,
 				52893F5F1D82B65900460ABA /* ShoppingCartTests.swift */,
 				52893F611D82B65900460ABA /* Info.plist */,
 			);
@@ -341,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525E5F221D8A72CA00B0DFC4 /* LoginPresenterTest.swift in Sources */,
 				52893F601D82B65900460ABA /* ShoppingCartTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

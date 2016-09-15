@@ -21,6 +21,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
         // Do any additional setup after loading the view.
         
         loginPresenter = LoginPresenter(loginView: self)
+        loginPresenter.startInitialization()
         
     }
     
@@ -67,7 +68,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
 //        let alertView = UIAlertView(title: "Information", message: msg, delegate: nil, cancelButtonTitle: "OK")
 //        alertView.show()
         
-        let alertController = UIAlertController(title: "Destructive", message: "Simple alertView demo with Destructive and Ok.", preferredStyle: UIAlertControllerStyle.Alert)
+        let alertController = UIAlertController(title: "", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
 //        let DestructiveAction = UIAlertAction(title: "Destructive", style: UIAlertActionStyle.Destructive) { (result : UIAlertAction) -> Void in
 //            print("Destructive")
 //        }

@@ -21,6 +21,10 @@ class LoginPresenter{
     
     init(loginView:LoginView){
         self.loginView = loginView;
+        
+    }
+    
+    func startInitialization() {
         self.loginView.intializeViewAndDelegate()
     }
     
