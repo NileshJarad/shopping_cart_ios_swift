@@ -7,4 +7,4 @@ Added test for login.
 
 
 ##Screenshots
-![alt Login Screen](https://github.com/NileshJarad/shopping_cart_ios_swift/blob/master/Screenshots/login.png?raw=true)
+<img src= "https://github.com/NileshJarad/shopping_cart_ios_swift/blob/master/Screenshots/login.png?raw=true" width = "300px"/>
