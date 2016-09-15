@@ -18,6 +18,9 @@
 		52893F551D82B65900460ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52893F531D82B65900460ABA /* LaunchScreen.storyboard */; };
 		52893F601D82B65900460ABA /* ShoppingCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52893F5F1D82B65900460ABA /* ShoppingCartTests.swift */; };
 		52893F6B1D82B65900460ABA /* ShoppingCartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52893F6A1D82B65900460ABA /* ShoppingCartUITests.swift */; };
+		52B254461D8AD406004CADD9 /* ShoppingCartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B254451D8AD406004CADD9 /* ShoppingCartPresenter.swift */; };
+		52B254491D8AD50C004CADD9 /* ShoppingCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B254481D8AD50C004CADD9 /* ShoppingCartModel.swift */; };
+		52B2544C1D8ADB9B004CADD9 /* ShoppingCartPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B2544B1D8ADB9B004CADD9 /* ShoppingCartPresenterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		52893F661D82B65900460ABA /* ShoppingCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52893F6A1D82B65900460ABA /* ShoppingCartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartUITests.swift; sourceTree = "<group>"; };
 		52893F6C1D82B65900460ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B254451D8AD406004CADD9 /* ShoppingCartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartPresenter.swift; path = ShoppingCart/ShoppingCartPresenter.swift; sourceTree = "<group>"; };
+		52B254481D8AD50C004CADD9 /* ShoppingCartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartModel.swift; path = ShoppingCart/ShoppingCartModel.swift; sourceTree = "<group>"; };
+		52B2544B1D8ADB9B004CADD9 /* ShoppingCartPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartPresenterTest.swift; path = ShoppingCart/ShoppingCartPresenterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		523F81D81D8971D400838C4D /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				52B254441D8AD3CF004CADD9 /* ShoppingCart */,
 				523F81E01D89739700838C4D /* Login */,
 			);
 			path = Presenters;
@@ -110,6 +117,7 @@
 		523F81D91D8971DC00838C4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				52B254471D8AD4F6004CADD9 /* ShoppingCart */,
 				523F81DF1D89738100838C4D /* Login */,
 			);
 			path = Models;
@@ -193,6 +201,7 @@
 		52893F5E1D82B65900460ABA /* ShoppingCartTests */ = {
 			isa = PBXGroup;
 			children = (
+				52B2544A1D8ADB67004CADD9 /* ShoppingCart */,
 				525E5F201D8A72A200B0DFC4 /* Login */,
 				52893F5F1D82B65900460ABA /* ShoppingCartTests.swift */,
 				52893F611D82B65900460ABA /* Info.plist */,
@@ -207,6 +216,30 @@
 				52893F6C1D82B65900460ABA /* Info.plist */,
 			);
 			path = ShoppingCartUITests;
+			sourceTree = "<group>";
+		};
+		52B254441D8AD3CF004CADD9 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				52B254451D8AD406004CADD9 /* ShoppingCartPresenter.swift */,
+			);
+			name = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		52B254471D8AD4F6004CADD9 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				52B254481D8AD50C004CADD9 /* ShoppingCartModel.swift */,
+			);
+			name = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		52B2544A1D8ADB67004CADD9 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				52B2544B1D8ADB9B004CADD9 /* ShoppingCartPresenterTest.swift */,
+			);
+			name = ShoppingCart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +374,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				523F81DE1D89730300838C4D /* LoginViewController.swift in Sources */,
+				52B254461D8AD406004CADD9 /* ShoppingCartPresenter.swift in Sources */,
 				5200B9511D8571FB007A7EA4 /* ColorConstants.swift in Sources */,
+				52B254491D8AD50C004CADD9 /* ShoppingCartModel.swift in Sources */,
 				52893F4B1D82B65900460ABA /* AppDelegate.swift in Sources */,
 				523F81E41D897E5F00838C4D /* LoginPresenter.swift in Sources */,
 				523F81E71D89892D00838C4D /* ToastView.swift in Sources */,
@@ -354,6 +389,7 @@
 			files = (
 				525E5F221D8A72CA00B0DFC4 /* LoginPresenterTest.swift in Sources */,
 				52893F601D82B65900460ABA /* ShoppingCartTests.swift in Sources */,
+				52B2544C1D8ADB9B004CADD9 /* ShoppingCartPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
