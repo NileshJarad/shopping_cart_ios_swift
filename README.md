@@ -2,8 +2,9 @@ Shopping Cart
 =============
 ##Update
 Project uses MVP(Model-View-Presenter) architecture.
-Current repository contains Login view with Autolayout.
-Added test for login.
+######Current repository contains :- 
+1. Login view with Autolayout.
+2. Unit test for login.
 
 
 ##Screenshots
