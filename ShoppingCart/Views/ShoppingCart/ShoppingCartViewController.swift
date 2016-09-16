@@ -25,6 +25,10 @@ class ShoppingCartViewController: UIViewController, UICollectionViewDelegateFlow
         shoppingCartPresenter.startInitialization()
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -71,8 +75,9 @@ class ShoppingCartViewController: UIViewController, UICollectionViewDelegateFlow
     }
 
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(2, 2, 2, 2)
+        return UIEdgeInsetsMake(6, 2, 2, 2)
     }
+    
     
 //    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
 //        return 2
