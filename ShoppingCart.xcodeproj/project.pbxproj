@@ -21,6 +21,8 @@
 		52B254461D8AD406004CADD9 /* ShoppingCartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B254451D8AD406004CADD9 /* ShoppingCartPresenter.swift */; };
 		52B254491D8AD50C004CADD9 /* ShoppingCartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B254481D8AD50C004CADD9 /* ShoppingCartModel.swift */; };
 		52B2544C1D8ADB9B004CADD9 /* ShoppingCartPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B2544B1D8ADB9B004CADD9 /* ShoppingCartPresenterTest.swift */; };
+		52B2544F1D8AEA86004CADD9 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B2544E1D8AEA86004CADD9 /* ShoppingCartViewController.swift */; };
+		52B254551D8B15CB004CADD9 /* ShoopingCartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B254541D8B15CB004CADD9 /* ShoopingCartCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		52B254451D8AD406004CADD9 /* ShoppingCartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartPresenter.swift; path = ShoppingCart/ShoppingCartPresenter.swift; sourceTree = "<group>"; };
 		52B254481D8AD50C004CADD9 /* ShoppingCartModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartModel.swift; path = ShoppingCart/ShoppingCartModel.swift; sourceTree = "<group>"; };
 		52B2544B1D8ADB9B004CADD9 /* ShoppingCartPresenterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartPresenterTest.swift; path = ShoppingCart/ShoppingCartPresenterTest.swift; sourceTree = "<group>"; };
+		52B2544E1D8AEA86004CADD9 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoppingCartViewController.swift; path = ShoppingCart/ShoppingCartViewController.swift; sourceTree = "<group>"; };
+		52B254541D8B15CB004CADD9 /* ShoopingCartCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShoopingCartCollectionViewCell.swift; path = ShoppingCart/ShoopingCartCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 		523F81D71D8971CA00838C4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52B2544D1D8AEA6B004CADD9 /* ShoppingCart */,
 				523F81DC1D8972BF00838C4D /* Login */,
 			);
 			path = Views;
@@ -242,6 +247,15 @@
 			name = ShoppingCart;
 			sourceTree = "<group>";
 		};
+		52B2544D1D8AEA6B004CADD9 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				52B2544E1D8AEA86004CADD9 /* ShoppingCartViewController.swift */,
+				52B254541D8B15CB004CADD9 /* ShoopingCartCollectionViewCell.swift */,
+			);
+			name = ShoppingCart;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,7 +387,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B2544F1D8AEA86004CADD9 /* ShoppingCartViewController.swift in Sources */,
 				523F81DE1D89730300838C4D /* LoginViewController.swift in Sources */,
+				52B254551D8B15CB004CADD9 /* ShoopingCartCollectionViewCell.swift in Sources */,
 				52B254461D8AD406004CADD9 /* ShoppingCartPresenter.swift in Sources */,
 				5200B9511D8571FB007A7EA4 /* ColorConstants.swift in Sources */,
 				52B254491D8AD50C004CADD9 /* ShoppingCartModel.swift in Sources */,

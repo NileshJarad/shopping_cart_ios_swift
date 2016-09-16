@@ -12,6 +12,7 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
     
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtUserPassword: UITextField!
+    var segueIdentifier :String = "shoppingCartView"
     
     var loginPresenter : LoginPresenter!
     
@@ -43,39 +44,25 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
     func showErrorMessage(errorMessage: String){
         showMessage(errorMessage)
     }
+    
     func showSuccessMessage(success: String){
-//        showMessage(success)
+        //        showMessage(success)
         ToastView.makeToast(self.view!,
-                               text: "Login Successful", duration: 2.0)
+                            text: "Login Successful", duration: 2.0)
     }
     
-    /**
-     Login View Delegate methods Ends
-     */
-
     
     /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
+     Login View Delegate methods Ends
      */
     
     private func showMessage(msg :String){
-//        let alertView = UIAlertView(title: "Information", message: msg, delegate: nil, cancelButtonTitle: "OK")
-//        alertView.show()
+        
         
         let alertController = UIAlertController(title: "", message: msg, preferredStyle: UIAlertControllerStyle.Alert)
-//        let DestructiveAction = UIAlertAction(title: "Destructive", style: UIAlertActionStyle.Destructive) { (result : UIAlertAction) -> Void in
-//            print("Destructive")
-//        }
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { (result : UIAlertAction) -> Void in
             print("OK")
         }
-//        alertController.addAction(DestructiveAction)
         alertController.addAction(okAction)
         self.presentViewController(alertController, animated: true, completion: nil)
         

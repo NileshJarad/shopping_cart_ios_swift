@@ -9,7 +9,8 @@
 import Foundation
 
 protocol ShoppingCartView {
-    func renderCartList(shoppingCartList : [ShoppingCartModel])
+    func intializeViewAndDelegate()
+    func renderCartItems(shoppingCartList : [ShoppingCartModel])
 }
 
 
@@ -20,14 +21,26 @@ class ShoppingCartPresenter {
     
     func attachView(view : ShoppingCartView){
         self.view = view
+//        startInitialization()
+    }
+    
+    
+    func startInitialization()  {
+        self.view.intializeViewAndDelegate()
     }
     
     func prepareCartList() {
-        addBeerToList("Bud Light", imageName: "Bud Light", rating: 5, price: 500, discountPer: 25)
-        addBeerToList("Heineken", imageName: "Heineken", rating: 5, price: 400, discountPer: 50)
-        addBeerToList("Budweiser", imageName: "Budweiser", rating: 5, price: 300, discountPer: 50)
         
-        view.renderCartList(shoppingCartList)
+        addBeerToList("Bud Light", imageName: "Bud Light", rating: 5, price: 500, discountPer: 2)
+        addBeerToList("Heineken", imageName: "Heineken", rating: 5, price: 400, discountPer: 1)
+        addBeerToList("Budweiser", imageName: "Budweiser", rating: 5, price: 250, discountPer: 5)
+        addBeerToList("Asahi", imageName: "Asahi", rating: 5, price: 400, discountPer: 3)
+        addBeerToList("Corona Extra", imageName: "Corona_Extra", rating: 5, price: 330, discountPer: 1)
+        addBeerToList("Tuborg", imageName: "Tuborg", rating: 5, price: 170, discountPer: 2)
+        addBeerToList("Carlsberg", imageName: "Carlsberg", rating: 5, price: 180, discountPer: 0)
+        addBeerToList("hoggard", imageName: "hoggard", rating: 5, price: 400, discountPer: 3)
+        
+        view.renderCartItems(shoppingCartList)
     }
     
     func addBeerToList(beerName : String ,imageName : String, rating : Float, price : Float, discountPer : Int) {
@@ -42,7 +55,11 @@ class ShoppingCartPresenter {
     }
     
     func getDiscountedPrice(price : Float, per : Int) -> Float! {
-        return price - (price * (Float(per)/100))
+        if per != 0{
+            return price - (price * (Float(per)/100))
+        }else{
+            return price
+        }
     }
     
 }
