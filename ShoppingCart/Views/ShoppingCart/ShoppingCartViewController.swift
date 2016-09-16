@@ -59,14 +59,13 @@ class ShoppingCartViewController: UIViewController, UICollectionViewDelegateFlow
     
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize{
-        return CGSize(width: (screenWidth-8) / 2, height: screenWidth / 2)
+        return CGSize(width: (screenWidth-8) / 2, height: 300)
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! ShoopingCartCollectionViewCell
        
-        cell.imgBeer.image = UIImage(named: "StubImage")
-        cell.lblName.text = shoppingCartItems[indexPath.row].name
+        cell.setItemData(shoppingCartItems[indexPath.row])
         
         return cell
     }

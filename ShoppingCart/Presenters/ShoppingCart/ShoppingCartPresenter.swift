@@ -31,14 +31,14 @@ class ShoppingCartPresenter {
     
     func prepareCartList() {
         
-        addBeerToList("Bud Light", imageName: "Bud Light", rating: 5, price: 500, discountPer: 2)
-        addBeerToList("Heineken", imageName: "Heineken", rating: 5, price: 400, discountPer: 1)
-        addBeerToList("Budweiser", imageName: "Budweiser", rating: 5, price: 250, discountPer: 5)
-        addBeerToList("Asahi", imageName: "Asahi", rating: 5, price: 400, discountPer: 3)
-        addBeerToList("Corona Extra", imageName: "Corona_Extra", rating: 5, price: 330, discountPer: 1)
-        addBeerToList("Tuborg", imageName: "Tuborg", rating: 5, price: 170, discountPer: 2)
-        addBeerToList("Carlsberg", imageName: "Carlsberg", rating: 5, price: 180, discountPer: 0)
-        addBeerToList("hoggard", imageName: "hoggard", rating: 5, price: 400, discountPer: 3)
+        addBeerToList("Bud Light", imageName: "StubImage", rating: 5, price: 500, discountPer: 2)
+        addBeerToList("Heineken", imageName: "StubImage", rating: 5, price: 400, discountPer: 1)
+        addBeerToList("Budweiser", imageName: "StubImage", rating: 5, price: 250, discountPer: 5)
+        addBeerToList("Asahi", imageName: "StubImage", rating: 5, price: 400, discountPer: 3)
+        addBeerToList("Corona Extra", imageName: "StubImage", rating: 5, price: 330, discountPer: 1)
+        addBeerToList("Tuborg", imageName: "StubImage", rating: 5, price: 170, discountPer: 2)
+        addBeerToList("Carlsberg", imageName: "StubImage", rating: 5, price: 180, discountPer: 0)
+        addBeerToList("hoggard", imageName: "StubImage", rating: 5, price: 400, discountPer: 3)
         
         view.renderCartItems(shoppingCartList)
     }
