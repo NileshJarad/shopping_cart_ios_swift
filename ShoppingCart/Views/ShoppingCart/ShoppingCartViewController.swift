@@ -14,6 +14,9 @@ class ShoppingCartViewController: UIViewController, UICollectionViewDelegateFlow
     var shoppingCartPresenter : ShoppingCartPresenter!
     var shoppingCartItems : [ShoppingCartModel] = []
     var cellIdentifier : String = "shoppingCarItem"
+    var segueIdentifierForDetailPage : String = "showDetailPage"
+    
+    var selectedItemModel : ShoppingCartModel!
     
     var screenWidth : CGFloat!
     var screenHeight : CGFloat!
@@ -41,8 +44,6 @@ class ShoppingCartViewController: UIViewController, UICollectionViewDelegateFlow
         screenWidth = UIScreen.mainScreen().bounds.size.width
         screenHeight = UIScreen.mainScreen().bounds.size.height
         
-//        self.collectionViewShoppingCart.delegate = self
-//        self.collectionViewShoppingCart.dataSource = self
         shoppingCartPresenter.prepareCartList()
     }
     
@@ -68,18 +69,25 @@ class ShoppingCartViewController: UIViewController, UICollectionViewDelegateFlow
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! ShoopingCartCollectionViewCell
-       
+        
         cell.setItemData(shoppingCartItems[indexPath.row])
         
         return cell
     }
-
+    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         return UIEdgeInsetsMake(6, 2, 2, 2)
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        self.selectedItemModel = shoppingCartItems[indexPath.row]
+        self.performSegueWithIdentifier(segueIdentifierForDetailPage, sender: self)
+    }
     
-//    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
-//        return 2
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+//        if (segue.identifier == "ShowDeal") {
+            if let viewController: ItemDetailsViewController = segue.destinationViewController as? ItemDetailsViewController {
+                viewController.itemDetailsModel = selectedItemModel
+            }
+    }
 }

@@ -30,9 +30,9 @@ class ShoppingCartPresenterTest: XCTestCase {
     func testCartListCount(){
         let shoppingCartPresenter  = ShoppingCartPresenter()
         
-        shoppingCartPresenter.addBeerToList("Bud Light", imageName: "Bud Light", rating: 5, price: 500, discountPer: 25)
-        shoppingCartPresenter.addBeerToList("Heineken", imageName: "Heineken", rating: 5, price: 400, discountPer: 50)
-        shoppingCartPresenter.addBeerToList("Budweiser", imageName: "Budweiser", rating: 5, price: 300, discountPer: 50)
+        shoppingCartPresenter.addBeerToList("Bud Light", imageName: "Bud Light", rating: 5, price: 500, discountPer: 25, description: "" )
+        shoppingCartPresenter.addBeerToList("Heineken", imageName: "Heineken", rating: 5, price: 400, discountPer: 50, description: "")
+        shoppingCartPresenter.addBeerToList("Budweiser", imageName: "Budweiser", rating: 5, price: 300, discountPer: 50, description: "")
         
         XCTAssertEqual(3, shoppingCartPresenter.shoppingCartList.count)
     }

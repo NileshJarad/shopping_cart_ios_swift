@@ -15,7 +15,5 @@ class ShoppingCartModel{
     var price : Float = 0.0
     var discountedPrice : Float = 0.0
     var discountPer : Int = 0
-    
-    
-    
+    var itemDescription : String = ""
 }
