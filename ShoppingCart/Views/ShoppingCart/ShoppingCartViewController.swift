@@ -28,9 +28,9 @@ class ShoppingCartViewController: UIViewController, UICollectionViewDelegateFlow
         shoppingCartPresenter.startInitialization()
     }
     
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return .LightContent
-    }
+//    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+//        return .LightContent
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -41,6 +41,10 @@ class ShoppingCartViewController: UIViewController, UICollectionViewDelegateFlow
      ShoppingCartView Delegate methods
      */
     func intializeViewAndDelegate(){
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+//        self.navigationController.navigationBar.barStyle = UIBarStyle.Black;
+        
         screenWidth = UIScreen.mainScreen().bounds.size.width
         screenHeight = UIScreen.mainScreen().bounds.size.height
         

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CB6-F5-Iwl">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="-854"/>
+            <point key="canvasLocation" x="-1" y="-1454"/>
         </scene>
         <!--Shopping Cart View Controller-->
         <scene sceneID="qWy-8B-AXC">
@@ -101,7 +101,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k9i-n8-xJg">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" red="0.12156862765550613" green="0.14117647707462311" blue="0.24313725531101227" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="3" id="BvT-qb-uxu">
                                     <size key="itemSize" width="282" height="291"/>
@@ -111,7 +111,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="shoppingCarItem" id="SH6-B1-Zhl" customClass="ShoopingCartCollectionViewCell" customModule="ShoppingCart" customModuleProvider="target">
-                                        <rect key="frame" x="19" y="0.0" width="282" height="291"/>
+                                        <rect key="frame" x="19" y="64" width="282" height="291"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="282" height="291"/>
@@ -168,8 +168,8 @@
                                                         <constraint firstAttribute="height" constant="1" id="5u6-r0-q7e"/>
                                                     </constraints>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="StubImage" translatesAutoresizingMaskIntoConstraints="NO" id="Al5-oe-ORp">
-                                                    <rect key="frame" x="1" y="0.0" width="280" height="146"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="StubImage" translatesAutoresizingMaskIntoConstraints="NO" id="Al5-oe-ORp">
+                                                    <rect key="frame" x="1" y="1" width="280" height="146"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLn-Zf-6Br">
                                                     <rect key="frame" x="213" y="262" width="61" height="21"/>
@@ -237,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tum-p0-YbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="563" y="-854"/>
+            <point key="canvasLocation" x="475" y="-1454"/>
         </scene>
         <!--Item Details View Controller-->
         <scene sceneID="kgv-xa-jYH">
@@ -252,7 +252,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgQ-sK-vRy">
-                                <rect key="frame" x="10" y="30" width="300" height="170.5"/>
+                                <rect key="frame" x="10" y="74" width="300" height="170.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZQ-dH-V7y">
                                         <rect key="frame" x="0.0" y="149" width="300" height="21"/>
@@ -311,22 +311,28 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSu-ch-1TN">
-                                <rect key="frame" x="10" y="210" width="300" height="142"/>
+                                <rect key="frame" x="10" y="254" width="300" height="85"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLr-rp-nsD">
-                                        <rect key="frame" x="8" y="51" width="284" height="35.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="450 Rs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc3-Kg-dRp">
+                                        <rect key="frame" x="64" y="37" width="228" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discounted Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki8-ox-14D">
-                                        <rect key="frame" x="8" y="97" width="284" height="35.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="420 Rs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki8-ox-14D">
+                                        <rect key="frame" x="64" y="61" width="228" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeN-1p-8Sd">
-                                        <rect key="frame" x="8" y="8" width="284" height="35.5"/>
+                                        <rect key="frame" x="8" y="8" width="284" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLr-rp-nsD">
+                                        <rect key="frame" x="8" y="37" width="48" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -335,17 +341,18 @@
                                 <color key="backgroundColor" red="0.22352941330000001" green="0.25490197539999998" blue="0.3960784376" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="VeN-1p-8Sd" firstAttribute="height" secondItem="HSu-ch-1TN" secondAttribute="height" multiplier="0.25" id="3GO-Fc-KOS"/>
-                                    <constraint firstItem="FLr-rp-nsD" firstAttribute="top" secondItem="VeN-1p-8Sd" secondAttribute="bottom" constant="8" id="3MO-9K-PDd"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ki8-ox-14D" secondAttribute="trailing" constant="8" id="8Uy-BZ-oQl"/>
-                                    <constraint firstAttribute="trailing" secondItem="FLr-rp-nsD" secondAttribute="trailing" constant="8" id="9Cs-Nu-ONq"/>
-                                    <constraint firstItem="FLr-rp-nsD" firstAttribute="leading" secondItem="HSu-ch-1TN" secondAttribute="leading" constant="8" id="BsT-9M-C6G"/>
-                                    <constraint firstItem="Ki8-ox-14D" firstAttribute="top" secondItem="FLr-rp-nsD" secondAttribute="bottom" constant="10" id="EZp-0d-dZR"/>
-                                    <constraint firstItem="FLr-rp-nsD" firstAttribute="height" secondItem="HSu-ch-1TN" secondAttribute="height" multiplier="0.25" id="HCA-TY-V51"/>
-                                    <constraint firstItem="Ki8-ox-14D" firstAttribute="leading" secondItem="HSu-ch-1TN" secondAttribute="leading" constant="8" id="K1E-Tr-Kar"/>
+                                    <constraint firstItem="Oc3-Kg-dRp" firstAttribute="bottom" secondItem="FLr-rp-nsD" secondAttribute="bottom" id="535-cT-29P"/>
+                                    <constraint firstItem="FLr-rp-nsD" firstAttribute="leading" secondItem="HSu-ch-1TN" secondAttribute="leading" constant="8" id="A1p-Qa-Mw4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oc3-Kg-dRp" secondAttribute="trailing" constant="8" id="HH6-f6-UAT"/>
+                                    <constraint firstItem="Ki8-ox-14D" firstAttribute="leading" secondItem="Oc3-Kg-dRp" secondAttribute="leading" id="M8F-f8-Xof"/>
                                     <constraint firstAttribute="trailing" secondItem="VeN-1p-8Sd" secondAttribute="trailing" constant="8" id="Z4I-uP-MOk"/>
+                                    <constraint firstItem="Oc3-Kg-dRp" firstAttribute="leading" secondItem="FLr-rp-nsD" secondAttribute="trailing" constant="8" id="a9P-Y6-9Ka"/>
+                                    <constraint firstItem="Oc3-Kg-dRp" firstAttribute="top" secondItem="FLr-rp-nsD" secondAttribute="top" id="apr-Mc-fdm"/>
+                                    <constraint firstItem="Ki8-ox-14D" firstAttribute="top" secondItem="Oc3-Kg-dRp" secondAttribute="bottom" constant="6" id="cOb-Ur-lnl"/>
                                     <constraint firstItem="VeN-1p-8Sd" firstAttribute="top" secondItem="HSu-ch-1TN" secondAttribute="top" constant="8" id="cxW-1y-9ge"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ki8-ox-14D" secondAttribute="trailing" constant="8" id="jCS-mr-3SB"/>
                                     <constraint firstItem="VeN-1p-8Sd" firstAttribute="leading" secondItem="HSu-ch-1TN" secondAttribute="leading" constant="8" id="one-0L-w9Q"/>
-                                    <constraint firstItem="Ki8-ox-14D" firstAttribute="height" secondItem="HSu-ch-1TN" secondAttribute="height" multiplier="0.25" id="soJ-NI-uzi"/>
+                                    <constraint firstItem="FLr-rp-nsD" firstAttribute="top" secondItem="VeN-1p-8Sd" secondAttribute="bottom" constant="8" id="vHy-0K-nVl"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -354,10 +361,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPF-4s-5ql">
-                                <rect key="frame" x="10" y="362" width="300" height="196"/>
+                                <rect key="frame" x="10" y="349" width="300" height="209"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Descriptioin goes here" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bar-yx-mRf">
-                                        <rect key="frame" x="8" y="8" width="284" height="36"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptioin goes here" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bar-yx-mRf">
+                                        <rect key="frame" x="8" y="8" width="284" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -389,7 +396,7 @@
                             <constraint firstItem="RPF-4s-5ql" firstAttribute="leading" secondItem="Wve-a0-Svp" secondAttribute="leading" constant="10" id="Wyk-3Y-uFX"/>
                             <constraint firstAttribute="trailing" secondItem="RPF-4s-5ql" secondAttribute="trailing" constant="10" id="e9Z-KW-L6L"/>
                             <constraint firstAttribute="trailing" secondItem="dgQ-sK-vRy" secondAttribute="trailing" constant="10" id="hGh-81-ML2"/>
-                            <constraint firstItem="HSu-ch-1TN" firstAttribute="height" secondItem="Wve-a0-Svp" secondAttribute="height" multiplier="0.25" id="qC1-1J-n8y"/>
+                            <constraint firstItem="HSu-ch-1TN" firstAttribute="height" secondItem="Wve-a0-Svp" secondAttribute="height" multiplier="0.15" id="qC1-1J-n8y"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -397,15 +404,41 @@
                         <outlet property="btnDiscountPer" destination="kBO-VU-8z2" id="qH9-4B-FrC"/>
                         <outlet property="imgItem" destination="QsO-Nc-W79" id="Sqc-mh-9EQ"/>
                         <outlet property="lblDescription" destination="bar-yx-mRf" id="c9b-hb-wGQ"/>
-                        <outlet property="lblDiscountedPrice" destination="Ki8-ox-14D" id="go0-hn-5Kb"/>
+                        <outlet property="lblDiscountedPrice" destination="Ki8-ox-14D" id="rHu-ce-B4j"/>
                         <outlet property="lblName" destination="kZQ-dH-V7y" id="Ube-IT-hJg"/>
-                        <outlet property="lblPrice" destination="FLr-rp-nsD" id="SzA-KV-Exl"/>
+                        <outlet property="lblPrice" destination="Oc3-Kg-dRp" id="2qr-ah-sig"/>
                         <outlet property="lblRating" destination="VeN-1p-8Sd" id="cCc-y9-j6w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6l-Wt-wfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1075" y="-854"/>
+            <point key="canvasLocation" x="971" y="-1454"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="x7f-Cd-gcU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CB6-F5-Iwl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5wO-Ab-v3O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.12156862765550613" green="0.14117647707462311" blue="0.24313725531101227" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.12156862765550613" green="0.14117647707462311" blue="0.24313725531101227" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="0.0" green="0.65490198135375977" blue="0.67058825492858887" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XAp-lp-eDZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uyp-hf-xBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-465" y="-1454"/>
         </scene>
     </scenes>
     <resources>

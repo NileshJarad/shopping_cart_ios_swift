@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
+class LoginViewController: BaseViewController, LoginView, UITextFieldDelegate {
     
     @IBOutlet weak var txtUserName: UITextField!
     @IBOutlet weak var txtUserPassword: UITextField!
@@ -23,12 +23,20 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
         
         loginPresenter = LoginPresenter(loginView: self)
         loginPresenter.startInitialization()
+       
         
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBarHidden = false
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -41,6 +49,9 @@ class LoginViewController: UIViewController, LoginView, UITextFieldDelegate {
      */
     
     func intializeViewAndDelegate(){
+        
+        self.navigationController?.navigationBarHidden = true
+        
         txtUserName.delegate = self
         txtUserPassword.delegate = self
     }

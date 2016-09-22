@@ -10,6 +10,7 @@
 		5200B9511D8571FB007A7EA4 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5200B9501D8571FB007A7EA4 /* ColorConstants.swift */; };
 		522F18911D8D6CFB002F5F72 /* ItemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F18901D8D6CFB002F5F72 /* ItemDetailsViewController.swift */; };
 		522F18941D8D6D23002F5F72 /* ItemDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522F18931D8D6D23002F5F72 /* ItemDetailsPresenter.swift */; };
+		523CEB511D9132AB0000AB02 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CEB501D9132AB0000AB02 /* BaseViewController.swift */; };
 		523F81DE1D89730300838C4D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F81DD1D89730300838C4D /* LoginViewController.swift */; };
 		523F81E41D897E5F00838C4D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F81E31D897E5F00838C4D /* LoginPresenter.swift */; };
 		523F81E71D89892D00838C4D /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F81E61D89892D00838C4D /* ToastView.swift */; };
@@ -48,6 +49,7 @@
 		5200B9501D8571FB007A7EA4 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		522F18901D8D6CFB002F5F72 /* ItemDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemDetailsViewController.swift; path = ItemDetails/ItemDetailsViewController.swift; sourceTree = "<group>"; };
 		522F18931D8D6D23002F5F72 /* ItemDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemDetailsPresenter.swift; path = ItemDetails/ItemDetailsPresenter.swift; sourceTree = "<group>"; };
+		523CEB501D9132AB0000AB02 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = BaseController/BaseViewController.swift; sourceTree = "<group>"; };
 		523F81DD1D89730300838C4D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/LoginViewController.swift; sourceTree = "<group>"; };
 		523F81E31D897E5F00838C4D /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		523F81E61D89892D00838C4D /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
@@ -121,9 +123,18 @@
 			name = ItemDetails;
 			sourceTree = "<group>";
 		};
+		523CEB4F1D9132710000AB02 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				523CEB501D9132AB0000AB02 /* BaseViewController.swift */,
+			);
+			name = BaseController;
+			sourceTree = "<group>";
+		};
 		523F81D71D8971CA00838C4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				523CEB4F1D9132710000AB02 /* BaseController */,
 				522F188F1D8D6CB6002F5F72 /* ItemDetails */,
 				52B2544D1D8AEA6B004CADD9 /* ShoppingCart */,
 				523F81DC1D8972BF00838C4D /* Login */,
@@ -414,6 +425,7 @@
 				522F18941D8D6D23002F5F72 /* ItemDetailsPresenter.swift in Sources */,
 				522F18911D8D6CFB002F5F72 /* ItemDetailsViewController.swift in Sources */,
 				52B254551D8B15CB004CADD9 /* ShoopingCartCollectionViewCell.swift in Sources */,
+				523CEB511D9132AB0000AB02 /* BaseViewController.swift in Sources */,
 				52B254461D8AD406004CADD9 /* ShoppingCartPresenter.swift in Sources */,
 				5200B9511D8571FB007A7EA4 /* ColorConstants.swift in Sources */,
 				52B254491D8AD50C004CADD9 /* ShoppingCartModel.swift in Sources */,

@@ -44,8 +44,13 @@ class ItemDetailsViewController: UIViewController ,ItemDetailsView {
     func setDataFromPreviousContoller(shoppingCartModel : ShoppingCartModel){
         lblName.text = shoppingCartModel.name
         lblRating.text = "Rating : \(shoppingCartModel.rating)"
-        lblPrice.text = "Price : \(shoppingCartModel.price)"
-        lblDiscountedPrice.text = "Discounted Price : \(shoppingCartModel.discountedPrice)"
+        
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "\(shoppingCartModel.price) Rs")
+        attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
+        
+         lblPrice.attributedText = attributeString
+        
+        lblDiscountedPrice.text = "\(shoppingCartModel.discountedPrice) Rs"
         btnDiscountPer.setTitle("\(shoppingCartModel.discountPer)%", forState: .Normal)
         imgItem.image = UIImage(named: shoppingCartModel.imageName)
         
