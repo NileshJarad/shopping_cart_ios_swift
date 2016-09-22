@@ -24,8 +24,6 @@ class ItemDetailsViewController: UIViewController ,ItemDetailsView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print("Selected item : \(itemDetailsModel.name)")
-
         itemDetailsPresenter = ItemDetailsPresenter()
         itemDetailsPresenter.attachView(self)
         itemDetailsPresenter.setData(itemDetailsModel)
@@ -44,17 +42,24 @@ class ItemDetailsViewController: UIViewController ,ItemDetailsView {
     func setDataFromPreviousContoller(shoppingCartModel : ShoppingCartModel){
         lblName.text = shoppingCartModel.name
         lblRating.text = "Rating : \(shoppingCartModel.rating)"
+    
+        let priceStr = "\(shoppingCartModel.price) Rs"
         
-        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "\(shoppingCartModel.price) Rs")
-        attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
-        
-         lblPrice.attributedText = attributeString
-        
-        lblDiscountedPrice.text = "\(shoppingCartModel.discountedPrice) Rs"
-        btnDiscountPer.setTitle("\(shoppingCartModel.discountPer)%", forState: .Normal)
+        if shoppingCartModel.discountPer == 0{
+            btnDiscountPer.hidden = true
+            lblDiscountedPrice.hidden = true
+            lblDiscountedPrice.removeFromSuperview()
+            lblPrice.text = priceStr
+        }else {
+            btnDiscountPer.setTitle("\(shoppingCartModel.discountPer)%", forState: .Normal)
+            
+            let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string:priceStr )
+            attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attributeString.length))
+            lblPrice.attributedText = attributeString
+            lblDiscountedPrice.text = "\(shoppingCartModel.discountedPrice) Rs"
+        }
         imgItem.image = UIImage(named: shoppingCartModel.imageName)
-        
         lblDescription.text = shoppingCartModel.itemDescription
     }
-
+    
 }

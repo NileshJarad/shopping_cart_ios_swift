@@ -132,14 +132,14 @@
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwB-Ml-a9e">
-                                                            <rect key="frame" x="8" y="56" width="266" height="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwB-Ml-a9e">
+                                                            <rect key="frame" x="8" y="56" width="47.5" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLU-UY-AUT">
-                                                            <rect key="frame" x="8" y="77" width="266" height="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discount Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLU-UY-AUT">
+                                                            <rect key="frame" x="8" y="79" width="266" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -149,16 +149,12 @@
                                                     <constraints>
                                                         <constraint firstItem="TjW-r4-yBI" firstAttribute="leading" secondItem="lLw-gZ-ttp" secondAttribute="leading" id="1LU-7b-gVN"/>
                                                         <constraint firstItem="TjW-r4-yBI" firstAttribute="top" secondItem="lLw-gZ-ttp" secondAttribute="bottom" constant="6" id="2QJ-7r-0yv"/>
-                                                        <constraint firstItem="WwB-Ml-a9e" firstAttribute="trailing" secondItem="lLw-gZ-ttp" secondAttribute="trailing" id="4Ca-Zp-GRa"/>
                                                         <constraint firstItem="lLw-gZ-ttp" firstAttribute="top" secondItem="y0c-kg-1nw" secondAttribute="top" constant="8" id="CBZ-sc-DkM"/>
-                                                        <constraint firstItem="qLU-UY-AUT" firstAttribute="leading" secondItem="lLw-gZ-ttp" secondAttribute="leading" id="Co5-qE-SdX"/>
-                                                        <constraint firstItem="qLU-UY-AUT" firstAttribute="trailing" secondItem="lLw-gZ-ttp" secondAttribute="trailing" id="FRi-2W-KiE"/>
-                                                        <constraint firstItem="WwB-Ml-a9e" firstAttribute="leading" secondItem="lLw-gZ-ttp" secondAttribute="leading" id="H1R-XW-dmJ"/>
-                                                        <constraint firstItem="WwB-Ml-a9e" firstAttribute="top" secondItem="TjW-r4-yBI" secondAttribute="bottom" constant="3" id="SWX-AE-7nk"/>
+                                                        <constraint firstItem="WwB-Ml-a9e" firstAttribute="top" secondItem="TjW-r4-yBI" secondAttribute="bottom" constant="3" id="Fl3-rh-Bni"/>
                                                         <constraint firstItem="lLw-gZ-ttp" firstAttribute="leading" secondItem="y0c-kg-1nw" secondAttribute="leading" constant="8" id="ad1-Kq-cw5"/>
-                                                        <constraint firstItem="qLU-UY-AUT" firstAttribute="top" secondItem="WwB-Ml-a9e" secondAttribute="bottom" constant="3" id="eL0-uk-gjG"/>
                                                         <constraint firstItem="TjW-r4-yBI" firstAttribute="trailing" secondItem="lLw-gZ-ttp" secondAttribute="trailing" id="l8b-Fu-b6D"/>
                                                         <constraint firstAttribute="trailing" secondItem="lLw-gZ-ttp" secondAttribute="trailing" constant="8" id="vAJ-Ny-1Um"/>
+                                                        <constraint firstItem="WwB-Ml-a9e" firstAttribute="leading" secondItem="y0c-kg-1nw" secondAttribute="leading" constant="8" id="zYm-LM-hgz"/>
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWJ-WU-xJt">
@@ -311,28 +307,28 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSu-ch-1TN">
-                                <rect key="frame" x="10" y="254" width="300" height="85"/>
+                                <rect key="frame" x="10" y="254" width="300" height="87.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="450 Rs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc3-Kg-dRp">
-                                        <rect key="frame" x="64" y="37" width="228" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLr-rp-nsD">
+                                        <rect key="frame" x="8" y="37.5" width="48" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="420 Rs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki8-ox-14D">
-                                        <rect key="frame" x="64" y="61" width="228" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="450 Rs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc3-Kg-dRp">
+                                        <rect key="frame" x="64" y="37.5" width="228" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeN-1p-8Sd">
-                                        <rect key="frame" x="8" y="8" width="284" height="21.5"/>
+                                        <rect key="frame" x="8" y="8" width="284" height="22"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLr-rp-nsD">
-                                        <rect key="frame" x="8" y="37" width="48" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="420 Rs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ki8-ox-14D">
+                                        <rect key="frame" x="64" y="61.5" width="228" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -344,6 +340,7 @@
                                     <constraint firstItem="Oc3-Kg-dRp" firstAttribute="bottom" secondItem="FLr-rp-nsD" secondAttribute="bottom" id="535-cT-29P"/>
                                     <constraint firstItem="FLr-rp-nsD" firstAttribute="leading" secondItem="HSu-ch-1TN" secondAttribute="leading" constant="8" id="A1p-Qa-Mw4"/>
                                     <constraint firstAttribute="trailing" secondItem="Oc3-Kg-dRp" secondAttribute="trailing" constant="8" id="HH6-f6-UAT"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ki8-ox-14D" secondAttribute="bottom" constant="8" id="HPn-td-lvU"/>
                                     <constraint firstItem="Ki8-ox-14D" firstAttribute="leading" secondItem="Oc3-Kg-dRp" secondAttribute="leading" id="M8F-f8-Xof"/>
                                     <constraint firstAttribute="trailing" secondItem="VeN-1p-8Sd" secondAttribute="trailing" constant="8" id="Z4I-uP-MOk"/>
                                     <constraint firstItem="Oc3-Kg-dRp" firstAttribute="leading" secondItem="FLr-rp-nsD" secondAttribute="trailing" constant="8" id="a9P-Y6-9Ka"/>
@@ -361,7 +358,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPF-4s-5ql">
-                                <rect key="frame" x="10" y="349" width="300" height="209"/>
+                                <rect key="frame" x="10" y="351.5" width="300" height="206.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descriptioin goes here" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bar-yx-mRf">
                                         <rect key="frame" x="8" y="8" width="284" height="18"/>
@@ -398,6 +395,11 @@
                             <constraint firstAttribute="trailing" secondItem="dgQ-sK-vRy" secondAttribute="trailing" constant="10" id="hGh-81-ML2"/>
                             <constraint firstItem="HSu-ch-1TN" firstAttribute="height" secondItem="Wve-a0-Svp" secondAttribute="height" multiplier="0.15" id="qC1-1J-n8y"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qC1-1J-n8y"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
