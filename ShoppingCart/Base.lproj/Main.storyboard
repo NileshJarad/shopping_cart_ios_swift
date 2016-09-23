@@ -132,14 +132,20 @@
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwB-Ml-a9e">
-                                                            <rect key="frame" x="8" y="56" width="47.5" height="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwB-Ml-a9e">
+                                                            <rect key="frame" x="8" y="61" width="47.5" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Discount Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLU-UY-AUT">
-                                                            <rect key="frame" x="8" y="79" width="266" height="18"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="340 Rs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvs-Ub-hfJ">
+                                                            <rect key="frame" x="63" y="61" width="210.5" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="320 Rs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLU-UY-AUT">
+                                                            <rect key="frame" x="63" y="85" width="211" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -149,13 +155,28 @@
                                                     <constraints>
                                                         <constraint firstItem="TjW-r4-yBI" firstAttribute="leading" secondItem="lLw-gZ-ttp" secondAttribute="leading" id="1LU-7b-gVN"/>
                                                         <constraint firstItem="TjW-r4-yBI" firstAttribute="top" secondItem="lLw-gZ-ttp" secondAttribute="bottom" constant="6" id="2QJ-7r-0yv"/>
+                                                        <constraint firstItem="Qvs-Ub-hfJ" firstAttribute="top" secondItem="TjW-r4-yBI" secondAttribute="bottom" constant="8" id="64R-cI-aHG"/>
                                                         <constraint firstItem="lLw-gZ-ttp" firstAttribute="top" secondItem="y0c-kg-1nw" secondAttribute="top" constant="8" id="CBZ-sc-DkM"/>
-                                                        <constraint firstItem="WwB-Ml-a9e" firstAttribute="top" secondItem="TjW-r4-yBI" secondAttribute="bottom" constant="3" id="Fl3-rh-Bni"/>
+                                                        <constraint firstItem="WwB-Ml-a9e" firstAttribute="leading" secondItem="y0c-kg-1nw" secondAttribute="leading" constant="8" id="FQr-dB-qVh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Qvs-Ub-hfJ" secondAttribute="trailing" constant="8" id="Ge9-zz-bkz"/>
+                                                        <constraint firstItem="WwB-Ml-a9e" firstAttribute="top" secondItem="TjW-r4-yBI" secondAttribute="bottom" constant="8" id="LzL-mU-a4k"/>
+                                                        <constraint firstItem="qLU-UY-AUT" firstAttribute="top" secondItem="Qvs-Ub-hfJ" secondAttribute="bottom" constant="6" id="PLC-Gl-amB"/>
+                                                        <constraint firstItem="Qvs-Ub-hfJ" firstAttribute="top" secondItem="TjW-r4-yBI" secondAttribute="bottom" constant="8" id="Qye-5x-aei"/>
+                                                        <constraint firstItem="Qvs-Ub-hfJ" firstAttribute="top" secondItem="WwB-Ml-a9e" secondAttribute="top" id="VI3-1y-5Rs"/>
+                                                        <constraint firstAttribute="trailing" secondItem="qLU-UY-AUT" secondAttribute="trailing" constant="8" id="WGF-sD-aMp"/>
+                                                        <constraint firstItem="qLU-UY-AUT" firstAttribute="leading" secondItem="Qvs-Ub-hfJ" secondAttribute="leading" id="YpX-Bb-edT"/>
                                                         <constraint firstItem="lLw-gZ-ttp" firstAttribute="leading" secondItem="y0c-kg-1nw" secondAttribute="leading" constant="8" id="ad1-Kq-cw5"/>
+                                                        <constraint firstItem="qLU-UY-AUT" firstAttribute="top" secondItem="WwB-Ml-a9e" secondAttribute="bottom" constant="5" id="eMq-We-Krf"/>
                                                         <constraint firstItem="TjW-r4-yBI" firstAttribute="trailing" secondItem="lLw-gZ-ttp" secondAttribute="trailing" id="l8b-Fu-b6D"/>
+                                                        <constraint firstItem="Qvs-Ub-hfJ" firstAttribute="leading" secondItem="WwB-Ml-a9e" secondAttribute="trailing" constant="8" id="qlf-5x-mqZ"/>
                                                         <constraint firstAttribute="trailing" secondItem="lLw-gZ-ttp" secondAttribute="trailing" constant="8" id="vAJ-Ny-1Um"/>
-                                                        <constraint firstItem="WwB-Ml-a9e" firstAttribute="leading" secondItem="y0c-kg-1nw" secondAttribute="leading" constant="8" id="zYm-LM-hgz"/>
                                                     </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="64R-cI-aHG"/>
+                                                            <exclude reference="eMq-We-Krf"/>
+                                                        </mask>
+                                                    </variation>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWJ-WU-xJt">
                                                     <rect key="frame" x="169" y="256" width="113" height="1"/>
@@ -204,9 +225,9 @@
                                         <connections>
                                             <outlet property="imgBeer" destination="Al5-oe-ORp" id="m4h-vq-rfD"/>
                                             <outlet property="lblDiscount" destination="aLn-Zf-6Br" id="zml-Jo-kXp"/>
-                                            <outlet property="lblDiscountPrice" destination="qLU-UY-AUT" id="cwt-Nh-oE5"/>
+                                            <outlet property="lblDiscountPrice" destination="qLU-UY-AUT" id="ygW-RZ-bX1"/>
                                             <outlet property="lblName" destination="lLw-gZ-ttp" id="mOf-Gd-hYU"/>
-                                            <outlet property="lblPrice" destination="WwB-Ml-a9e" id="KjI-04-Qf7"/>
+                                            <outlet property="lblPrice" destination="Qvs-Ub-hfJ" id="aTI-5A-VkP"/>
                                             <outlet property="lblRating" destination="TjW-r4-yBI" id="eLO-gX-Tjj"/>
                                         </connections>
                                     </collectionViewCell>
